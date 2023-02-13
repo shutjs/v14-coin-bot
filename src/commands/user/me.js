@@ -15,7 +15,8 @@ module.exports =  {
         
 async executePrefix(client, message, args) {
     console.log(message.author)
-        let userdatas = await userdata.findOne({userID: message.author.id})
+       let userdatas = await userdata.findOne({userID: message.author.id})
+       if(!userdatas) return message.channel.send("sese giriniz")
        let embed = new EmbedBuilder()
        .setThumbnail(message.guild.iconURL())
        .setColor("2F3136")
