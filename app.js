@@ -2,7 +2,6 @@
 const { Client, Collection, EmbedBuilder, IntentsBitField } = require("discord.js");
 const userdata = require(`./src/data/userdata`)
 const marketdata = require('./src/data/marketdata');
-const user = require("../../AppData/Locals/src/database/user");
 const client = new Client({
     intents:  Object.keys(IntentsBitField.Flags) 
 });
