@@ -39,7 +39,7 @@ module.exports =  {
           return;
         }
     let userdatas = await userdata.findOne({userID: message.author.id})
-   
+   if(!userdatas) return message.channel.send("sese giriniz")
     if(userdatas.points < product.urunPara) return message.reply(`Yeterli Paran Yok Mevcut Paran: ${userdatas.points}`)
     let coinsil = product.urunPara - userdatas.points;
 
