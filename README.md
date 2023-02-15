@@ -10,5 +10,5 @@ Ses aktifliği için kullanabilirsiniz.
 Seste 1 dakika durunca database kullanıcıyı ekler her 1 dakikada 10 coin verir
 Oldstate newstate mantığı olduğu için sesten çıktıkdan sonra coini verir
 
-*Hata verirse Shut#0001
+#Hata verirse Shut#0001
 https://dcvote.com.tr/
