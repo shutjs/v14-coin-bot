@@ -8,3 +8,4 @@ Market sistemli modallı v14 bot geliştirebilirsiniz.
 Ürun ekleme modallıdır marketten birşey satın alınca loga yollar
 Ses aktifliği için kullanabilirsiniz.
 Seste 1 dakika durunca database kullanıcıyı ekler her 1 dakikada 10 coin verir
+Oldstate newstate mantığı olduğu için sesten çıktıkdan sonra coini verir
