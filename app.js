@@ -19,10 +19,10 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
     let oldChannel = oldState.channel;
     let newChannel = newState.channel;
   
-    if (!oldChannel && newChannel) {
+    if (!oldChannel && newChannel && newState.mute === false && newState.deaf === false) {
       let joinTime = new Date();
       setInterval(async() => {
-        if (newState.channelId === newChannel.id) {
+        if (newState.channelId === newChannel.id && newState.mute === false && newState.deaf === false) {
           let points = 10;
           let userda = userdata.findOne({userID: newState.member.id})
           userda.points += points;
